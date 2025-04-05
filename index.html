@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html{
+        zoom: 100%;
+      }
+      body {
+        background-color: white;
+        padding: 0;
+        margin: 0;
+        font-family: poppins, "Roboto Slab";
+      }
+      header {
+        background: rgb(131, 58, 180);
+        background: linear-gradient(
+          90deg,
+          rgb(131, 58, 180) 0%,
+          rgba(253, 29, 1) 50%,
+          rgba(252, 176, 69, 1) 100%
+        );
+        padding: 40px;
+      }
+      .header-container {
+        display: flex;
+      }
+      .imgprofile {
+        width: 150px;
+        height: 140px;
+        border: 3px solid white;
+        border-radius: 50%;
+        box-shadow: 10px 5px 10px 2px rgba(84, 36, 116, 0.39);
+        transition: all;
+        transition-duration: 1s;
+      }
+
+      .imgprofile:hover {
+        margin-left: -10px;
+      }
+      .holderimgprofile {
+        flex: 1;
+        text-align: center;
+      }
+      .holderDetailprofile {
+        flex: 1.5;
+      }
+      .nameprofile {
+        font-size: 48px;
+        color: white;
+        font-weight: 600;
+      }
+      .Titleprofile {
+        color: white;
+      }
+      .button {
+        border: none;
+        padding: 5px 10px;
+        margin: 10px 10px 0 0;
+        font-family: "Roboto slab", serif;
+        border-radius: 15px;
+        cursor: pointer;
+        font-size: 13px;
+        font-weight: 600;
+        transition: all;
+        transition-duration: 1s;
+      }
+      .button.download {
+        background-color: white;
+        color: rgb(51, 54, 54);
+        cursor: pointer;
+      }
+      .button.hire {
+        background-color: #37bc9b;
+        color: white;
+        cursor: pointer;
+      }
+      .button:hover {
+        transform: scale(1.1);
+      }
+
+      .subContent {
+        font-size: 18px;
+        font-weight: 500;
+        color: rgb(53, 53, 53);
+      }
+      .barcontainer {
+        background-color: rgb(235, 233, 233);
+        width: 100%;
+        height: 20px;
+        border-radius: 20px;
+        position: relative;
+      }
+      .barfilling {
+        height: 20px;
+
+        position: absolute;
+        border-radius: 20px;
+      }
+      .green {
+        background-color: rgb(35, 128, 7);
+        width: 80%;
+      }
+      .purple {
+        background-color: rgb(154, 28, 185);
+        width: 70%;
+      }
+      .yellow {
+        background-color: rgb(231, 158, 21);
+        width: 50%;
+      }
+
+      ul.workEx li {
+        font-size: 20px;
+        padding: 30px;
+      }
+      ul.workEx li:nth-child(odd) {
+        background-color: rgb(180, 180, 180);
+      }
+
+      span strong {
+        color: #19058b;
+      }
+
+      footer {
+        background-color: rgb(75, 75, 75);
+        text-align: center;
+      }
+
+      .footerholder {
+        max-width: 980;
+        margin:auto;
+        padding: 30px;
+      }
+
+      .footerName{
+        font-size: 20px;
+        font-weight: 400;
+        color: white;
+      }
+    </style>
+  </head>
+  <header>
+    <div class="header-container">
+      <div class="holderimgprofile">
+        <img class="imgprofile" src="IMG-20220701-WA0020.jpg" alt="" />
+      </div>
+      <div class="holderDetailprofile">
+        <div class="nameprofile">Colle Palmer</div>
+        <div class="Titleprofile">Sofware Enggineer & Fullstack Developer</div>
+        <div>
+          <button class="button download">Download CV</button>
+          <button class="button hire">Hire Me</button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <body>
+    <div class="contenHolder">
+      <div>
+        <h1>About Me</h1>
+        <div class="subContent">
+          Saya memiliki pemahaman yang kuat tentang siklus pengembangan
+          perangkat lunak (SDLC) dan metodologi Agile. Saya mahir dalam
+          membangun antarmuka pengguna yang menarik dan intuitif (front-end)
+          serta mengembangkan logika server yang kuat dan efisien (back-end).
+        </div>
+      </div>
+      <div>
+        <h1>Profesional Skill</h1>
+        <div class="skillBar">
+          <h3>HTML</h3>
+          <div class="barcontainer">
+            <div class="barfilling green"></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="skillBar">
+          <h3>CSS</h3>
+          <div class="barcontainer">
+            <div class="barfilling purple"></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="skillBar">
+          <h3>JAVASCRIPT</h3>
+          <div class="barcontainer">
+            <div class="barfilling yellow"></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h1>Work Experience</h1>
+        <ul class="workEx">
+          <li>
+            <span class="subworkEx">
+             Fullstack Developer at <strong> Creative Agency</strong>
+              Pengalaman sebagai Full Stack Developer dalam membangun dan
+              memelihara aplikasi web end-to-end.
+            </span>
+          </li>
+          
+          <li>
+            <span class="subworkEx">
+              Software Engineer at <strong> Creative Agency</strong>
+              Berpengalaman dalam merancang, mengembangkan, dan
+              mengimplementasikan solusi perangkat lunak inovatif untuk memenuhi
+              kebutuhan bisnis.
+            </span>
+          </li>
+
+          <li>
+            <span class="subworkEx">
+              Software Engineer at <strong> Creative Agency</strong> 
+              Berpengalaman dalam merancang, mengembangkan, dan
+              mengimplementasikan solusi perangkat lunak inovatif untuk memenuhi
+              kebutuhan bisnis.
+            </span>
+          </li>
+
+          <li>
+            <span class="subworkEx">
+            Software Engineer at <strong> Creative Agency</strong>
+              Berpengalaman dalam merancang, mengembangkan, dan
+              mengimplementasikan solusi perangkat lunak inovatif untuk memenuhi
+              kebutuhan bisnis.
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+
+  <footer>
+    <div class="footerholder">
+      <div class="footerName"> &copy;2025 Colle Palmer</div>
+    </div>
+  </footer>
+</html>
